@@ -1,3 +1,4 @@
+// package github.com/mabetle/golog/slog. Simple Logger implement, Using fmt.Println
 package slog
 
 import(
@@ -6,8 +7,8 @@ import(
 
 type SimpleLog struct{
 	catalog string
+	level string
 }
-
 
 func GetLogger(v ...interface{}) *SimpleLog{
 	return &SimpleLog{}
@@ -24,17 +25,29 @@ func GetCatalog(l SimpleLog) string {
 
 func (l SimpleLog)Error(v ...interface{}){
 	/*fmt.Println("[Error]",": ",v)*/
-	fmt.Println("[Error]",GetCatalog(l), ": ",v)
+	l.writeLog("ERROR",v)
 }
+
 func (l SimpleLog)Warn(v ...interface{}){
-	fmt.Println("[Warn]",v)
+	l.writeLog("WARN",v)
 }
+
 func (l SimpleLog)Info(v ...interface{}){
-	fmt.Println("[Info]",v)
+	l.writeLog("INFO",v)
 }
+
 func (l SimpleLog)Debug(v ...interface{}){
-	fmt.Println("[Debug]",v)
+	l.writeLog("DEBUG",v)
 }
+
 func (l SimpleLog)Trace(v ...interface{}){
-	fmt.Println("[Trace]",v)
+	l.writeLog("TRACE",v)
 }
+
+func (l SimpleLog) writeLog(level string,v ...interface{}){
+	//catalogLevel
+	//logLevel
+	//TODO: determine write or not by level.
+	fmt.Println("[",level,"]",GetCatalog(l),": ",v)
+}
+

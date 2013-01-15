@@ -1,4 +1,4 @@
-// Mabetle golog config
+// package github.com/mabetle/golog/config. 
 package config
 
 

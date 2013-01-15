@@ -5,8 +5,8 @@ GoLog is a logger for Go Language. The ideas are from SLF4J.
 
 GoLog have bridges to:
 
-	* SeeLog (github.com/cihub/seelog)
-	* Timber (github.com/ngmoco/timber)
+	* SeeLog [github.com/cihub/seelog]
+	* Timber [github.com/ngmoco/timber]
 	* log (from go language package)
 
 and GoLog has a very simple logger implement using fmt.Println()
@@ -15,38 +15,43 @@ and GoLog has a very simple logger implement using fmt.Println()
 Install
 ------
 
-go get -u github.com/mabetle/golog
+	go get -u github.com/mabetle/golog
 
 
 Using In Go Code
 ----------------
-import "github.com/mabetle/golog"
 
-logger:=golog.GetLogger("")
 
-//logger:=golog.GetSeeLogger("")
+	import "github.com/mabetle/golog"
 
-//logger:=golog.GetGoLangLogger("")
+	logger:=golog.GetLogger("")
 
-//logger:=golog.GetSimpleLogger("")
+	//logger:=golog.GetSeeLogger("")
 
-//logger:=golog.GetTimberLogger("")
+	//logger:=golog.GetGoLangLogger("")
+		
+	//logger:=golog.GetSimpleLogger("")
 
-logger.Info(args ...interface{})
+	//logger:=golog.GetTimberLogger("")
 
-logger.Error(args ...interface{})
+	logger.Info(args ...interface{})
 
-logger.Warn(args ...interface{})
+	logger.Error(args ...interface{})
 
-logger.Debug(args ...interface{})
+	logger.Warn(args ...interface{})
 
-logger.Trace(args ...interface{})
+	logger.Debug(args ...interface{})
+
+	logger.Trace(args ...interface{})
+
 
 Run Demo
 -------
-cd MABETLE_GOLOG_PATH
 
-go run cmd/demo/main.go
+	cd MABETLE_GOLOG_PATH
+
+	go run cmd/demo/main.go
+
 
 BUGS
 ----

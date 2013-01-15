@@ -1,3 +1,4 @@
+// package github.com/mabetle/golog/timberb. Logger implement for timber
 package timberb
 
 import(

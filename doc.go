@@ -1,8 +1,7 @@
 /*
- Mabetle GoLog Package
-
+ package github.com/mabetle/golog. Logger for Go language.
+ 
  GoLog ideas are form SNF4j.
-
 
  GoLog make bridges to 
   
@@ -10,7 +9,7 @@
 	* timber (github.com/ngmoco/timber)
 	* log (in go lang package)
 
-and  GoLog has a very simple logger implement, using fmt.Println().
+ and  GoLog has a very simple logger implement, using fmt.Println().
 
 
  Install

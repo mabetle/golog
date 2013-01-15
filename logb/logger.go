@@ -1,3 +1,4 @@
+// package github.com/mabetle/golog/logb. Logger implement for Go language log pakcage
 package logb
 
 

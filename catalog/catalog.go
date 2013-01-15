@@ -1,3 +1,4 @@
+// package github.com/mabetle/golog/catalog. 
 package catalog
 
 
