@@ -1,0 +1,23 @@
+<logging>
+  <filter enabled="true">
+	<tag>stdout</tag>
+	<type>console</type>
+	<!-- level is (:?FINEST|FINE|DEBUG|TRACE|INFO|WARNING|ERROR) -->
+	<level>DEBUG</level>
+  </filter>
+  <filter enabled="false">
+	<tag>file</tag>
+	<type>file</type>
+	<level>FINEST</level>
+	<property name="filename">log/server.log</property>
+	<property name="format">server [%D %T] [%L] %M</property>
+  </filter>
+  <filter enabled="false">
+	<tag>syslog</tag>
+	<type>socket</type>
+	<level>FINEST</level>
+	<property name="protocol">unixgram</property>
+	<property name="endpoint">/dev/log</property>
+    <format name="pattern">%L %M</property>
+  </filter>
+</logging>
