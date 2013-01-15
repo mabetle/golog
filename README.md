@@ -25,8 +25,11 @@ import "github.com/mabetle/golog"
 logger:=golog.GetLogger("")
 
 //logger:=golog.GetSeeLogger()
+
 //logger:=golog.GetGoLangLogger()
+
 //logger:=golog.GetSimpleLogger()
+
 //logger:=golog.GetTimberLogger()
 
 logger.Info(args ...interface{})
@@ -39,6 +42,11 @@ logger.Debug(args ...interface{})
 
 logger.Trace(args ...interface{})
 
+RUN DEMO
+-------
+cd MABETLE_GOLOG_PATH
+
+go run cmd/demo/main.go
 
 BUGS
 ----
