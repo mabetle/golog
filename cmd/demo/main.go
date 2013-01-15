@@ -7,14 +7,10 @@ import(
 
 func main() {
 
-	logger := golog.GetLogger("")
-
-
-	logger.Error("Hello")
-	logger.Warn("Hello")
-	logger.Info("Hello")
-	logger.Debug("Hello")
-	logger.Trace("Hello")
+	golog.DemoLogger(golog.GetLogger(""))
+	golog.DemoLogger(golog.GetSimpleLogger(""))
+	golog.DemoLogger(golog.GetSeeLogger(""))
+	golog.DemoLogger(golog.GetTimberLogger(""))
 
 }
 

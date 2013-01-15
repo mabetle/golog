@@ -7,7 +7,7 @@ import(
 type TimberLog struct{
 }
 
-func GetTimberLogger(v ...interface{}) *TimberLog {
+func GetLogger(v ...interface{}) *TimberLog {
 	return new(TimberLog)
 }
 

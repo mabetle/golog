@@ -9,7 +9,7 @@ type SimpleLog struct{
 }
 
 
-func GetSimpleLogger() *SimpleLog{
+func GetLogger(v ...interface{}) *SimpleLog{
 	return &SimpleLog{}
 }
 

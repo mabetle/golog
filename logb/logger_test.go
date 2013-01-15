@@ -6,7 +6,7 @@ import(
 
 func TestGoLangLog(t *testing.T){
 
-	logger := GetGoLangLogger()
+	logger := GetLogger("")
 
 	logger.Error("Hello")
 	logger.Warn("Hello")

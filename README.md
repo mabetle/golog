@@ -12,25 +12,25 @@ GoLog have bridges to:
 and GoLog has a very simple logger implement using fmt.Println()
 
 
-INSTALL
+Install
 ------
 
 go get -u github.com/mabetle/golog
 
 
-USING IN GO CODE
+Using In Go Code
 ----------------
 import "github.com/mabetle/golog"
 
 logger:=golog.GetLogger("")
 
-//logger:=golog.GetSeeLogger()
+//logger:=golog.GetSeeLogger("")
 
-//logger:=golog.GetGoLangLogger()
+//logger:=golog.GetGoLangLogger("")
 
-//logger:=golog.GetSimpleLogger()
+//logger:=golog.GetSimpleLogger("")
 
-//logger:=golog.GetTimberLogger()
+//logger:=golog.GetTimberLogger("")
 
 logger.Info(args ...interface{})
 
@@ -42,7 +42,7 @@ logger.Debug(args ...interface{})
 
 logger.Trace(args ...interface{})
 
-RUN DEMO
+Run Demo
 -------
 cd MABETLE_GOLOG_PATH
 

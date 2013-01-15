@@ -1,18 +1,12 @@
-package timberb
+package golog
 
-import(
-	"testing"
-)
 
-func TestTimberLog(t *testing.T){
-
-	logger := GetLogger("golog")
-
+func DemoLogger(logger Logger){
 	logger.Error("Hello")
 	logger.Warn("Hello")
 	logger.Info("Hello")
 	logger.Debug("Hello")
 	logger.Trace("Hello")
-
 }
+
 

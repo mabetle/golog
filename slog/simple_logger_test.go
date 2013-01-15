@@ -5,7 +5,8 @@ import(
 )
 
 func TestSeeLog(t *testing.T){
-	logger :=GetSimpleLogger()
+
+	logger :=GetLogger("")
 
 	logger.Error("Hello")
 	logger.Warn("Hello")

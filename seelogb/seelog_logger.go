@@ -7,7 +7,7 @@ import(
 
 type SeeLog struct{}
 
-func GetSeeLogger() *SeeLog{
+func GetLogger(v ...interface{}) *SeeLog{
 	return &SeeLog{}
 }
 

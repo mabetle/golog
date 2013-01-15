@@ -1,13 +1,17 @@
 /*
- Mabetle Go Log Package
- 
- golog has a simple logger implement, using fmt.Println().
+ Mabetle GoLog Package
 
- golog make a bridge to 
+ GoLog ideas are form SNF4j.
+
+
+ GoLog make bridges to 
   
 	* seelog (github.com/cihub/seelog)
 	* timber (github.com/ngmoco/timber)
 	* log (in go lang package)
+
+and  GoLog has a very simple logger implement, using fmt.Println().
+
 
  Install
  =======
@@ -19,10 +23,10 @@
 
  import "github.com/mabetle/golog"
 
- logger := golog.GetLogger()
- //logger :=golog.GetSeeLogger()
- //logger :=golog.GetGoLangLogger()
- //logger :=golog.GetTimberLogger()
+ logger := golog.GetLogger("")
+ //logger :=golog.GetSeeLogger("")
+ //logger :=golog.GetGoLangLogger("")
+ //logger :=golog.GetTimberLogger("")
 
  logger.Error("Error")
  logger.Warn("Warn")

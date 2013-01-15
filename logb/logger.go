@@ -10,7 +10,7 @@ type GoLangLog struct{
 }
 
 
-func GetGoLangLogger() *GoLangLog{
+func GetLogger(v ...interface{}) *GoLangLog{
 	return new(GoLangLog)
 }
 
